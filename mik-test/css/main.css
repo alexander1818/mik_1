@@ -1,0 +1,318 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+}
+/*Header*/
+.header {
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	font-family: roboto;
+	background-color: #111212;
+	opacity: 0.8;
+}
+.logo-navbar__img {
+	width: 80px;
+	height: 48px;	
+}
+.wrap-navbar {
+	color: #fff;
+}
+.logo-navbar__slogan > li {
+	list-style-type: none;
+	color: #fff;
+	font-size: 11px;
+	line-height: 6px;
+}
+.wrap-navbar__rightSide {
+	color: #fff;
+}
+.telefonNumber {
+
+	font-size: 28px;
+}
+.facebook-icon {
+	background: #FF7100;
+	padding: 5px 10px 5px 10px;
+}
+.facebook-icon:hover {
+	box-shadow: 0px 0px 13px 0px #FF7100;
+}
+.language > p {
+	font-size: 14px;
+}
+.navbar-menu__text > p {
+	font-size: 14px;
+}
+.navbar-menu__burger  {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.burger1 {
+	background-color: #FF7100;
+	width: 30px;
+	height: 4px;
+	margin: 3px;
+}
+.burger2 {
+	background-color: #FF7100;
+	width: 22px;
+	height: 4px;
+	margin: 3px;
+}
+.burger3 {
+	background-color: #FF7100;
+	width: 28px;
+	height: 4px;
+	margin: 3px;
+}
+.navbar-subMenu__active {
+	display: flex;
+	justify-content: start;
+	background: #1E1F21;
+	opacity: 0.7;
+	list-style-type: none;
+	text-decoration: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	transition-duration: 1s ;
+}
+.navbar-subMenu {
+	display: none;
+	transition: all 1s ease;
+}
+.navbar-subMenu__item {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ADADAD;
+	line-height: 21px;
+	padding: 40px 20px 40px 20px;
+	text-decoration: none;
+	list-style-type: none;
+}
+.navbar-subMenu__link {
+	text-decoration: none;
+	list-style-type: none;
+}
+.navbar-subMenu__link li:hover {
+	color: #fff;
+}
+/*End Header*/
+
+/*Main page*/
+.main-page {
+	color: #fff;
+	background-image: url(../img/main_bg.png) ;
+	background-size: cover;
+	background-color: #0d0d0e;
+	opacity: 1;
+}
+.stock-title__text {
+	color: #ffff;
+	font-size: 48px;
+}
+.slider {
+	z-index: 0;
+}
+.slide-item__title {
+	display: flex;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 57px;
+	color: #CFCFCF;
+	line-height: 16px;
+	margin: 0px;
+	padding: 0;
+}
+.slick-center .slide-item__title {
+	font-size: 65px;
+	color: #fff;
+}
+.slick-center .slide-item__discription {
+	display: flex;
+	justify-content:start;
+	align-items: start;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+}
+.slick-slide {
+	outline: none;
+}
+.slide-item__discription {
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+}
+.slide-item__discription {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px
+}
+.discription {
+	z-index: 0;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 200px 0px 100px 0px;	
+}
+.swipe-down {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10px;
+}
+/*End Main page*/
+
+/*partners*/
+.wraper-sections__forBG {
+	color: #fff;
+	background-image: url(../img/bg.png);
+}
+.partners-title__text {
+	font-size: 48px;
+}
+.rent-discription__title {
+	color: #ffff;
+	font-size: 48px;
+}
+.partners-discription,
+.catalog-title__discription {
+	font-size: 15px;
+}
+.partners-img {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 40vh;
+}
+.partners-action-images__item {
+	margin: 40px;
+}
+.partners-images__discription1 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	text-align: center;
+}
+.partners-images__discription {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	max-width: 230px;
+	text-align: center;
+	font-size: 15px;
+}
+.slide-prev,
+.slide-next {
+	outline: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	background: #FF7100;
+	padding: 5px 10px 5px 10px;
+}
+.link-prev, 
+.link-next	{
+	display: block;
+	text-decoration: none;
+	
+}
+.slide-prev {
+	border-right: 1px solid  #CD5C02;
+}
+.rent-link {
+	color: #FF7100;
+}
+.rent-discription__bottom {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+}
+/*End partners*/
+
+ /*каталог продукции*/ 
+ .catalog-title {
+ 	font-family: Ubuntu;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 48px;
+ 	line-height: 55px;
+ 	color: #FFFFFF;
+ }
+ .catalog-img {
+ 	background: #1D1D1D;
+ 	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+ }
+ .catalog-img:hover {
+ 	filter: none;
+    -webkit-filter: grayscale(0);
+ }
+ .image-discription {
+ 	font-family: Ubuntu;
+ 	font-style: normal;
+ 	font-weight: 500;
+ 	font-size: 18px;
+ 	line-height: 22px;
+ 	text-align: center;
+ }
+  .catalog-products-bottom__text {
+  	font-size: 13px;
+  	line-height: 22px;
+  	font-family: Ubuntu;
+  	font-style: normal;
+  	font-weight: 300;
+  	color: #FFFFFF;
+ }
+ .catalog-products-bottom__btn {
+ 	width: 290px;
+ 	height: 58px;
+ 	font-family: Roboto;
+ 	font-style: normal;
+ 	font-weight: 500;
+ 	font-size: 18px;
+ 	line-height: 21px;
+ 	text-align: center;
+ 	background: linear-gradient(165.15deg, #FF7100 -0.66%, #FF5C00 84.64%);
+ 	border: none;
+ 	color: #fff;
+ 	cursor: pointer;
+ }
+ .catalog-products-bottom__btn:hover {
+ 	box-shadow: 0px 0px 13px 0px #FF7100;
+ }
+ /*Конец каталог продукции*/
+
+ .copyright-text {
+ 	font-family: Roboto;
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	font-size: 12px;
+ 	color: rgba(255, 255, 255, 0.68);
+ }
+ .phone,
+ .angle-up {
+ 	display: block;
+ 	margin:  5px;
+	background: #FF7100;
+	padding: 5px 10px 5px 10px; 
+ } 
+ .link-up,
+ .link-phone {
+	text-decoration: none;
+ 	color: #fff;
+ } 

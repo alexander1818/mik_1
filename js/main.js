@@ -1,8 +1,10 @@
+// import i18next from 'i18next';
+
 function dropMenu() {
 	let getMenu = document.getElementById('burger');
 	
 	getMenu.onclick = function() {
-		let getSubMenu = document.getElementById('subMenu')
+		let getSubMenu = document.getElementById('subMenu');
 		
 		if (getSubMenu.classList.contains('navbar-subMenu')) {
 			getSubMenu.classList.remove('navbar-subMenu');
@@ -18,6 +20,57 @@ function dropMenu() {
 }
 dropMenu();
 
+// Switch languge
+
+function engLanguage() {
+	let engLanguage = document.getElementById('eng');
+	engLanguage.onclick = function(e) {
+		console.log('x')
+
+		i18next.init({
+		  lng: 'en',
+		  debug: true,
+		  resources: {
+		    en: {
+		      translation: {
+		        'en': "Hello World"
+		      }
+		    },
+		    ru: {
+		      translation: {
+		        'ru': "Привет мир"
+		      }
+		    }
+		  }
+		}, function(err, t) {
+		  // init set content
+		  updateContent();
+		});
+	}
+	function updateContent() {
+	  document.getElementById('subMenu').innerHTML = i18next.t('en');
+	}
+
+	function changeLng(lng) {
+	  i18next.changeLanguage(lng);
+	}
+
+	i18next.on('languageChanged', () => {
+	  updateContent();
+	});
+
+}
+engLanguage();
+// next/prev buttons
+	$('#nextBtn').click(function(){
+		   $(".multiple-items").slick('slickNext');
+	});
+
+	$('#prevBtn').click(function(){
+		   $(".multiple-items").slick('slickPrev');
+	});
+	
+//Slider Partners
 $(document).ready(function() {
 	$('.multiple-items').slick({
 	         slidesToShow: 3,
